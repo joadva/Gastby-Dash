@@ -1,0 +1,10 @@
+.graficas {
+  display: block;
+  width: 640px;
+  height: 320px;
+}
+
+.chart-area {
+  height: 220px;
+  width: 100%;
+}
