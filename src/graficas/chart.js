@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react"
 import { Line } from "react-chartjs-2"
 
+import "../style/graficas.css"
+
 const ChartData = () => {
   const [whatever, setWhatever] = useState({})
 
@@ -9,7 +11,7 @@ const ChartData = () => {
       labels: ["monday", "tuesday", "wednesday", "thursday", "friday"],
       datasets: [
         {
-          level: "level of xyz",
+          level: "eol",
           data: [32, 55, 33, 47, 64],
         },
       ],
@@ -23,7 +25,7 @@ const ChartData = () => {
   return (
     <div>
       <h1>Person with covid</h1>
-      <div className="graficas">
+      <div className="flex flex-col items-center w-full max-w-md graficas">
         <Line data={whatever} />
       </div>
     </div>

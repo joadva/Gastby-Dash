@@ -13,11 +13,11 @@ export function setUser(user) {
 }
 
 export function handleLogin({ username, password }) {
-  if (username === "joadva" && password === "123") {
+  if (username === "Admin" && password === "123") {
     return setUser({
       username: `Joadva`,
-      name: `Adrian valemtin`,
-      email: `hola@joadva.com`,
+      name: `Jorge Guise`,
+      email: `hola@jempresa.com`,
     })
   }
 

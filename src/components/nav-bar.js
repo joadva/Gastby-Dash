@@ -26,6 +26,8 @@ export default function NavBar() {
         {` `}
         <Link to="/app/perfil">Perfil</Link>
         {` `}
+        <Link to="/app/empleados">Empleados</Link>
+        {` `}
         {isLoggedIn() ? (
           <a
             href="/"
