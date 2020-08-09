@@ -13,7 +13,7 @@ export function setUser(user) {
 }
 
 export function handleLogin({ username, password }) {
-  if (username === "Admin" && password === "123") {
+  if (username === "admin" && password === "123") {
     return setUser({
       username: `Joadva`,
       name: `Jorge Guise`,
