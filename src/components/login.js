@@ -23,7 +23,7 @@ export default function Login() {
   return (
     <>
       <div className="login-box">
-        <img src={logo} width="300px" height="medium"></img>
+        <img src={logo} width="300px" height="medium" alt="logo"></img>
         <h2>Login</h2>
 
         <form

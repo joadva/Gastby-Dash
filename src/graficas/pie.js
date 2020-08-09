@@ -2,7 +2,7 @@ import React, { Component } from "react"
 import { Pie } from "react-chartjs-2"
 
 const data = {
-  labels: ["Red", "Green", "Yellow"],
+  labels: ["Production", "TI", "OBREROS :V"],
   datasets: [
     {
       data: [300, 50, 100],
@@ -16,7 +16,7 @@ class PieExample extends Component {
   render() {
     return (
       <div className="flex flex-col items-center w-full max-w-md graficas ">
-        <h2>Pie Example</h2>
+        <h2>Areas </h2>
         <Pie data={data} />
       </div>
     )

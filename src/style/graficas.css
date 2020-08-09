@@ -1,10 +1,16 @@
-.graficas {
-  display: block;
-  width: 640px;
-  height: 320px;
+#content {
+  overflow: auto;
+  margin: 2 auto;
 }
 
-.chart-area {
-  height: 220px;
-  width: 100%;
+#left,
+#right {
+  width: 40%;
+}
+
+#left {
+  float: left;
+}
+#right {
+  float: right;
 }

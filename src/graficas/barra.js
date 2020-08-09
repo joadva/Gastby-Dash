@@ -5,7 +5,7 @@ const data = {
   labels: ["January", "February", "March", "April", "May", "June", "July"],
   datasets: [
     {
-      label: "My First dataset",
+      label: "Empleados",
       backgroundColor: "rgba(255,99,132,0.2)",
       borderColor: "rgba(255,99,132,1)",
       borderWidth: 1,
@@ -20,7 +20,7 @@ class BarExample extends Component {
   render() {
     return (
       <div className="flex flex-col items-center w-full max-w-md graficas">
-        <h2>Bar Example (custom size)</h2>
+        <h2>En La empresa</h2>
         <Bar data={data} width={100} height={50} options={{}} />
       </div>
     )

@@ -4,7 +4,7 @@ import { Bar } from "react-chartjs-2"
 const data = {
   datasets: [
     {
-      label: "Sales",
+      label: "in home",
       type: "line",
       data: [51, 65, 40, 49, 60, 37, 40],
       fill: false,
@@ -17,7 +17,7 @@ const data = {
       yAxisID: "y-axis-2",
     },
     {
-      label: "Visitor",
+      label: "Working",
       type: "bar",
       data: [200, 185, 590, 621, 250, 400, 95],
       fill: false,
@@ -93,7 +93,7 @@ const plugins = [
   {
     afterDraw: (chartInstance, easing) => {
       const { ctx } = chartInstance.chart
-      ctx.fillText("This text drawn by a plugin", 100, 100)
+      ctx.fillText("", 100, 100)
     },
   },
 ]
@@ -102,7 +102,7 @@ class MixExample extends Component {
   render() {
     return (
       <div className="flex flex-col items-center w-full max-w-md graficas">
-        <h2>Mixed data Example</h2>
+        <h2> data Empleados</h2>
         <Bar data={data} options={options} plugins={plugins} />
       </div>
     )

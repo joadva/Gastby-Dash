@@ -17,14 +17,25 @@ export default function Perfil() {
         <li>Nombre: {getUser().name}</li>
         <li>Email: {getUser().email}</li>
       </ul>
-
-      <Barra />
-
-      <br></br>
       <Charts />
-      <Pie />
-      <Dona />
-      <TwoChart />
+
+      <div id="content">
+        <div id="left">
+          <Barra />
+        </div>
+        <br></br>
+        <div id="right">
+          <TwoChart />
+        </div>
+      </div>
+      <div id="content">
+        <div id="left">
+          <Pie />
+        </div>
+        <div id="right">
+          <Dona />
+        </div>
+      </div>
     </>
   )
 }
