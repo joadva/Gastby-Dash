@@ -20,6 +20,10 @@ export default function Login() {
     navigate(`/app/login`)
   }
 
+  let mensaje = ""
+  if (!isLoggedIn()) {
+    mensaje = "su user and password is incorrect"
+  }
   return (
     <>
       <div className="login-box">
@@ -48,6 +52,7 @@ export default function Login() {
               onChange={e => setPassword(e.target.value)}
             />
             <label>Password</label>
+            {mensaje}
           </div>
           <input className="boton" type="submit" value="Login" />
         </form>
