@@ -11,51 +11,50 @@ import TableRow from "@material-ui/core/TableRow"
 
 const columns = [
   { id: "name", label: "Name", minWidth: 170 },
-  { id: "code", label: "ISO\u00a0Code", minWidth: 100 },
+  { id: "area", label: "Area for employes", minWidth: 100 },
   {
-    id: "population",
-    label: "Population",
+    id: "past",
+    label: "Temperatura after",
     minWidth: 170,
     align: "right",
     format: value => value.toLocaleString("en-US"),
   },
   {
-    id: "size",
-    label: "Size\u00a0(km\u00b2)",
+    id: "after",
+    label: "Temperature After",
     minWidth: 170,
     align: "right",
     format: value => value.toLocaleString("en-US"),
   },
   {
-    id: "density",
-    label: "Density",
+    id: "temperature",
+    label: "temperature Today",
     minWidth: 170,
     align: "right",
-    format: value => value.toFixed(2),
+    format: value => value.toLocaleString("en-US"),
   },
 ]
 
-function createData(name, code, population, size) {
-  const density = population / size
-  return { name, code, population, size, density }
+function createData(name, area, past, after, temperature) {
+  return { name, area, past, after, temperature }
 }
 
 const rows = [
-  createData("India", "IN", 1324171354, 3287263),
-  createData("China", "CN", 1403500365, 9596961),
-  createData("Italy", "IT", 60483973, 301340),
-  createData("United States", "US", 327167434, 9833520),
-  createData("Canada", "CA", 37602103, 9984670),
-  createData("Australia", "AU", 25475400, 7692024),
-  createData("Germany", "DE", 83019200, 357578),
-  createData("Ireland", "IE", 4857000, 70273),
-  createData("Mexico", "MX", 126577691, 1972550),
-  createData("Japan", "JP", 126317000, 377973),
-  createData("France", "FR", 67022000, 640679),
-  createData("United Kingdom", "GB", 67545757, 242495),
-  createData("Russia", "RU", 146793744, 17098246),
-  createData("Nigeria", "NG", 200962417, 923768),
-  createData("Brazil", "BR", 210147125, 8515767),
+  createData("Jose Miguel", "Warehousing Department", 36, 37, 37),
+  createData("Aurora Ginz", "Human Resources", 34, 37.8, 37.3),
+  createData("March Loops", "Sales Department", 36.7, 36, 37),
+  createData("Margen POLS", "Production Department", 37, 32, 37.5),
+  createData("Javie Koie", "Logistics Department", 36, 37, 37.6),
+  createData("Burns Ganel", "Customer Service Department", 36, 32.9, 37),
+  createData("Germanel Puls", "Production Department", 36, 31, 37),
+  createData("Irveing Gutis", "Production Department", 36, 32, 37),
+  createData("Maria Losp", "Production Department", 36, 39, 37),
+  createData("Jairo Bernal", "Warehousing Department", 36, 39, 37),
+  createData("Fracs Mirts", "Warehousing Department", 36, 38, 39),
+  createData("Udstio King", "Warehousing Department", 36, 36, 37),
+  createData("Rubert Herna", "Warehousing Department", 36, 36, 37),
+  createData("Nigre Lion", "Logistics Department", 36, 36, 37),
+  createData("Brante Bent", "Logistics Department", 36, 36, 37),
 ]
 
 const useStyles = makeStyles({
@@ -121,7 +120,6 @@ export default function StickyHeadTable() {
         </Table>
       </TableContainer>
       <TablePagination
-        rowsPerPageOptions={[10, 25, 100]}
         component="div"
         count={rows.length}
         rowsPerPage={rowsPerPage}

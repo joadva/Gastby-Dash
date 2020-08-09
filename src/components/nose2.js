@@ -20,6 +20,7 @@ import ListItemText from "@material-ui/core/ListItemText"
 import { Link, navigate } from "gatsby"
 import { getUser, isLoggedIn, logout } from "../services/auth"
 
+import Empleados from "../components/empleados"
 //import graficas
 import Charts from "../graficas/chart"
 import Pie from "../graficas/pie"
@@ -193,7 +194,7 @@ export default function PersistentDrawerLeft() {
       >
         <div className={classes.drawerHeader} />
         <Charts />
-
+        <Empleados />
         <div id="content">
           <div id="left">
             <Barra />
