@@ -7,7 +7,7 @@
 1. [Links Backend y app movil , Panel](#Links)
 1. [Inir](#Instalar)
 1. [Live demo](#live-demo)
-1. [- [Autors](#Autors)
+1. [Autors](#Autors)
 1. [License](#memo-license)
 1. [Thanks ](#-thanks)
 
@@ -15,15 +15,13 @@
 
 ### What is COVIDSECURITY? ?
 
-IIt consists of a mobile application with the purpose of checking the temperature of workers and people at the entrances of each workplace or any place where you need to check the temperature of people as a shopping center or any space in that way take care of them and help the company or any other establishment that needs a in this way prevent contagion in places with access to people people.
+It consists of a mobile application with the purpose of checking the temperature of workers and people at the entrances of each workplace or any place where you need to check the temperature of people as a shopping center or any space in that way take care of them and help the company or any other establishment that needs a in this way prevent contagion in places with access to people people.
 
 ## The best!
 
 You will take care of your employees' or people's health and help them move up in their social mobility. Besides them, they will also take care of their families, since a timely diagnosis will always be better than a disaster.
 
 ## VIDEO
-
-https://youtu.be/IUj9o6RVUFA
 
 ## Links
 
@@ -60,6 +58,8 @@ You can view and running on your local dev environment in 5 minutes with these f
 ## Backend
 
 **Clone project.**
+
+http://45.79.192.222:3800/document
 
 git clone https://github.com/SergioSosaGonzalez/Covid-backend
 
