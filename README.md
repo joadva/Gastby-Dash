@@ -1,13 +1,33 @@
-Covid Security
+# Covid-Segurity
 
-## What’s In This Document
+## Content
 
-- [Runing and Install](#Get-Up-and-Running-in-5-Minutes)
-- [Autors](#Autors)
-- [License](#memo-license)
-- [Thanks ](#-thanks)
+1. [Description](#Description)
+1. [Demo video]()
+1. [Links Backend y app movil , Panel](#Links)
+1. [Inir](#Instalar)
+1. [Live demo](#live-demo)
+1. [- [Autors](#Autors)
+1. [License](#memo-license)
+1. [Thanks ](#-thanks)
 
-## 🚀 Get Up and Running in 5 Minutes
+## Description
+
+### What is COVIDSECURITY? ?
+
+IIt consists of a mobile application with the purpose of checking the temperature of workers and people at the entrances of each workplace or any place where you need to check the temperature of people as a shopping center or any space in that way take care of them and help the company or any other establishment that needs a in this way prevent contagion in places with access to people people.
+
+## The best!
+
+You will take care of your employees' or people's health and help them move up in their social mobility. Besides them, they will also take care of their families, since a timely diagnosis will always be better than a disaster.
+
+## VIDEO
+
+https://youtu.be/IUj9o6RVUFA
+
+## Links
+
+## Panel
 
 You can view and running on your local dev environment in 5 minutes with these four steps:
 
@@ -21,6 +41,8 @@ You can view and running on your local dev environment in 5 minutes with these f
 
    git clone https://github.com/joadva/Gastby-Dash.git
 
+   cd Gastby-Dash
+
    after
 
    npm install
@@ -33,17 +55,49 @@ You can view and running on your local dev environment in 5 minutes with these f
 
 4. **Open the source code and start editing!**
 
-   Your site is now running at `http://localhost:8000`. O
+   Your site is now running at `http://localhost:8000`
 
-## 🎓 What is covid security
+## Backend
 
-### tecnology utilzadas
+**Clone project.**
+
+git clone https://github.com/SergioSosaGonzalez/Covid-backend
+
+cd Covid-backend
+
+after
+
+npm install
+
+## Strart backend
+
+npm run node
+
+## App movil
+
+**Clone project.**
+
+git clone https://github.com/joadva/App-Secutiry-Auth.git
+
+cd App-Secutiry-Auth
+
+after
+
+npm install
+
+## Strart app
+
+ionic serve
+
+### tecnology
 
 1. Gatsby
 2. React
 3. Github
 4. chartjs
 5. material-ui
+6. node
+7. ionic
 
 ### Autors
 

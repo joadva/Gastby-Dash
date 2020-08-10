@@ -34,8 +34,8 @@ const ChartData = () => {
   return (
     <div>
       <h1>Person with covid</h1>
-      <div>
-        <Line className="backgroundColor:black" data={whatever} />
+      <div className="container">
+        <Line data={whatever} />
       </div>
     </div>
   )
