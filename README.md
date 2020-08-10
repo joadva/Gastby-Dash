@@ -2,19 +2,19 @@ Covid Security
 
 ## What’s In This Document
 
-- [Autors](#Autores)
+- [Runing and Install] (#Get Up and Running in 5 Minutes)
+- [Autors](#Autors)
 - [License](#memo-license)
 - [Thanks to Our Contributors and Sponsors](#-thanks)
 
 ## 🚀 Get Up and Running in 5 Minutes
 
-You can get a new Gatsby site up and running on your local dev environment in 5 minutes with these four steps:
+You can view and running on your local dev environment in 5 minutes with these four steps:
 
 1. **Install the Gatsby CLI.**
 
    ```shell
    npm install -g gatsby-cli
-
    ```
 
 2. **Clone project.**
