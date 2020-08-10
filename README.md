@@ -39,12 +39,18 @@ You can view and running on your local dev environment in 5 minutes with these f
 
 ### tecnology utilzadas
 
+**Gatsby
+**React
+**Github
+**chartjs
+\*\*material-ui
+
 ### Autors
 
-Daniel Valadez Frias
-Jose Adrian Valentin Rodriguez
-Luis Miguel Alamilla Hernandez
-Sergio Arturo Sosa Gonzalez
+**Daniel Valadez Frias
+**Jose Adrian Valentin Rodriguez
+**Luis Miguel Alamilla Hernandez
+**Sergio Arturo Sosa Gonzalez
 
 ## :memo: License
 
