@@ -17,7 +17,7 @@ import ListItem from "@material-ui/core/ListItem"
 import ListItemText from "@material-ui/core/ListItemText"
 
 // Los import :v de paginas
-import { Link, navigate } from "gatsby"
+import { navigate } from "gatsby"
 import { getUser, isLoggedIn, logout } from "../services/auth"
 
 import Empleados from "../components/empleados"
@@ -129,18 +129,6 @@ export default function PersistentDrawerLeft() {
           <Typography variant="h6" noWrap>
             {mensaje}
           </Typography>
-
-          {isLoggedIn() ? (
-            <a
-              href="/"
-              onClick={event => {
-                event.preventDefault()
-                logout(() => navigate("/app/login"))
-              }}
-            >
-              Logout
-            </a>
-          ) : null}
         </Toolbar>
       </AppBar>
       <Drawer
@@ -165,23 +153,17 @@ export default function PersistentDrawerLeft() {
         <List>
           <ListItem>
             <li>
-              <Link to="/">
-                {" "}
-                <ListItemText>Home</ListItemText>{" "}
-              </Link>
-              {` `}
-            </li>
-            <li>
-              <Link to="/app/perfil">
-                <ListItemText>Pergil</ListItemText>
-              </Link>
-              {` `}
-            </li>
-            <li>
-              <Link to="/app/empleados">
-                <ListItemText>Employed</ListItemText>
-              </Link>
-              {` `}
+              {isLoggedIn() ? (
+                <a
+                  href="/"
+                  onClick={event => {
+                    event.preventDefault()
+                    logout(() => navigate("/app/login"))
+                  }}
+                >
+                  <ListItemText>Logout</ListItemText>
+                </a>
+              ) : null}
             </li>
           </ListItem>
         </List>

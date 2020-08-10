@@ -2,7 +2,11 @@ import React, { Component } from "react"
 import { Pie } from "react-chartjs-2"
 
 const data = {
-  labels: ["Production", "TI", "OBREROS"],
+  labels: [
+    "Logistics Department",
+    "Warehousing Department",
+    "Production Department",
+  ],
   datasets: [
     {
       data: [300, 50, 100],

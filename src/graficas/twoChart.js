@@ -102,7 +102,7 @@ class MixExample extends Component {
   render() {
     return (
       <div className="flex flex-col items-center w-full max-w-md graficas">
-        <h2> data Empleados</h2>
+        <h2 position="center"> Data for Empleados</h2>
         <Bar data={data} options={options} plugins={plugins} />
       </div>
     )

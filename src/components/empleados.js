@@ -40,7 +40,7 @@ function createData(name, area, past, after, temperature) {
 }
 
 const rows = [
-  createData("Jose Miguel", "Warehousing Department", 36, 37, 37),
+  createData("Daniel Valadez", "Warehousing Department", 36, 37, 37),
   createData("Aurora Ginz", "Human Resources", 34, 37.8, 37.3),
   createData("March Loops", "Sales Department", 36.7, 36, 37),
   createData("Margen POLS", "Production Department", 37, 32, 37.5),
@@ -81,52 +81,60 @@ export default function StickyHeadTable() {
   }
 
   return (
-    <Paper className={classes.root}>
-      <TableContainer className={classes.container}>
-        <Table stickyHeader aria-label="sticky table">
-          <TableHead>
-            <TableRow>
-              {columns.map(column => (
-                <TableCell
-                  key={column.id}
-                  align={column.align}
-                  style={{ minWidth: column.minWidth }}
-                >
-                  {column.label}
-                </TableCell>
-              ))}
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {rows
-              .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
-              .map(row => {
-                return (
-                  <TableRow hover role="checkbox" tabIndex={-1} key={row.code}>
-                    {columns.map(column => {
-                      const value = row[column.id]
-                      return (
-                        <TableCell key={column.id} align={column.align}>
-                          {column.format && typeof value === "number"
-                            ? column.format(value)
-                            : value}
-                        </TableCell>
-                      )
-                    })}
-                  </TableRow>
-                )
-              })}
-          </TableBody>
-        </Table>
-      </TableContainer>
-      <TablePagination
-        component="div"
-        count={rows.length}
-        rowsPerPage={rowsPerPage}
-        page={page}
-        onChangePage={handleChangePage}
-        onChangeRowsPerPage={handleChangeRowsPerPage}
-      />
-    </Paper>
+    <div>
+      <h1>Employess Temperature</h1>
+      <Paper className={classes.root}>
+        <TableContainer className={classes.container}>
+          <Table stickyHeader aria-label="sticky table">
+            <TableHead>
+              <TableRow>
+                {columns.map(column => (
+                  <TableCell
+                    key={column.id}
+                    align={column.align}
+                    style={{ minWidth: column.minWidth }}
+                  >
+                    {column.label}
+                  </TableCell>
+                ))}
+              </TableRow>
+            </TableHead>
+            <TableBody>
+              {rows
+                .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
+                .map(row => {
+                  return (
+                    <TableRow
+                      hover
+                      role="checkbox"
+                      tabIndex={-1}
+                      key={row.code}
+                    >
+                      {columns.map(column => {
+                        const value = row[column.id]
+                        return (
+                          <TableCell key={column.id} align={column.align}>
+                            {column.format && typeof value === "number"
+                              ? column.format(value)
+                              : value}
+                          </TableCell>
+                        )
+                      })}
+                    </TableRow>
+                  )
+                })}
+            </TableBody>
+          </Table>
+        </TableContainer>
+        <TablePagination
+          component="div"
+          count={rows.length}
+          rowsPerPage={rowsPerPage}
+          page={page}
+          onChangePage={handleChangePage}
+          onChangeRowsPerPage={handleChangeRowsPerPage}
+        />
+      </Paper>
+    </div>
   )
 }

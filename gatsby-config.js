@@ -6,5 +6,7 @@
 
 module.exports = {
   /* Your site config here */
+  pathPrefix: "/Gastby-Dash",
+
   plugins: [],
 }

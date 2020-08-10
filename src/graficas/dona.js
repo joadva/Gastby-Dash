@@ -16,7 +16,7 @@ class DoughnutExample extends Component {
   render() {
     return (
       <div className="flex flex-col items-center w-full max-w-md  graficas ">
-        <h2>data for jobs</h2>
+        <h2>Contagiousness Data</h2>
         <Doughnut data={data} />
       </div>
     )

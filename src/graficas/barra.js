@@ -20,7 +20,7 @@ class BarExample extends Component {
   render() {
     return (
       <div className="flex flex-col items-center w-full max-w-md graficas">
-        <h2>En La empresa</h2>
+        <h2>Employee Assistance</h2>
         <Bar data={data} width={100} height={50} options={{}} />
       </div>
     )

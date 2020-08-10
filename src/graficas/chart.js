@@ -11,8 +11,17 @@ const ChartData = () => {
       labels: ["monday", "tuesday", "wednesday", "thursday", "friday"],
       datasets: [
         {
-          level: "eol",
-          data: [32, 55, 33, 47, 64],
+          label: "Days",
+          level: "Days",
+          data: [32, 55, 33, 47, 13],
+          borderColor: ["#3F51B5"],
+          backgroundColor: [
+            "#FF6384",
+            "#36A2EB",
+            "#FFCE56",
+            "#FF5733",
+            "#BEFF33",
+          ],
         },
       ],
     })
@@ -25,8 +34,8 @@ const ChartData = () => {
   return (
     <div>
       <h1>Person with covid</h1>
-      <div className="flex flex-col items-center w-full max-w-md graficas">
-        <Line data={whatever} />
+      <div>
+        <Line className="backgroundColor:black" data={whatever} />
       </div>
     </div>
   )

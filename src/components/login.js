@@ -24,7 +24,7 @@ export default function Login() {
     <>
       <div className="login-box">
         <img src={logo} width="300px" height="medium" alt="logo"></img>
-        <h2>Login</h2>
+        <h2>Sign in</h2>
 
         <form
           method="post"
@@ -34,22 +34,22 @@ export default function Login() {
           }}
         >
           <div className="user-box">
+            <h4>User </h4>
             <input
               type="text"
               name="username"
               onChange={e => setUsername(e.target.value)}
             />
-            <label>User </label>
           </div>
           <div className="user-box">
+            <h4>Password</h4>
             <input
               type="password"
               name="password"
               onChange={e => setPassword(e.target.value)}
             />
-            <label>Password</label>
           </div>
-          <input className="boton" type="submit" value="Login" />
+          <input className="boton" type="submit" value="Log in" />
         </form>
       </div>
     </>
