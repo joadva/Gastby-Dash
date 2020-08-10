@@ -2,10 +2,10 @@ Covid Security
 
 ## What’s In This Document
 
-- [Runing and Install] (#Get Up and Running in 5 Minutes)
+- [Runing and Install](#Get-Up-and-Running-in-5-Minutes)
 - [Autors](#Autors)
 - [License](#memo-license)
-- [Thanks to Our Contributors and Sponsors](#-thanks)
+- [Thanks ](#-thanks)
 
 ## 🚀 Get Up and Running in 5 Minutes
 
